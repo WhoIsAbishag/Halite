@@ -58,7 +58,7 @@ while True:
                 navigate_command = ship.navigate(
                     ship.closest_point_to(planet),
                     game_map,
-                    speed=int(hlt.constants.MAX_SPEED/2),
+                    speed=int(hlt.constants.MAX_SPEED),
                     ignore_ships=True)
                 # If the move is possible, add it to the command_queue (if there are too many obstacles on the way
                 # or we are trapped (or we reached our destination!), navigate_command will return null;
